@@ -49,3 +49,4 @@ Inspect the CSVs and sketch out an ERD of the tables.<br/>
   - [`.ipynb` file of script](https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/Employee.ipynb)<br/>
   - [Histogram for the most common salary ranges](https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/The%20Most%20Common%20Salary%20Ranges%20for%20Employees.png)<br/>
   - [Bar chart of average salary](https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/Average%20Salary%20by%20Title.png)<br/>
+<br/>
