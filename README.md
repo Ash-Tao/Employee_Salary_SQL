@@ -19,7 +19,7 @@ Inspect the CSVs and sketch out an ERD of the tables.<br/>
   > If the table you are trying to import has a foreign key in it, you need to import the table which the foreign key refers to first.<br/>
 
 ### Data Analysis
-#### Queries
+#### SQL Queries
 - List the following details of each employee: employee number, last name, first name, sex, and salary.<br/>
 - List first name, last name, and hire date for employees who were hired in 1986.<br/>
 - List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.<br/>
