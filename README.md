@@ -37,14 +37,15 @@ Inspect the CSVs and sketch out an ERD of the tables.<br/>
    connection = engine.connect()
    ```
 - Create a histogram to visualize the most common salary ranges for employees.<br/>
-   <img src="https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/The%20Most%20Common%20Salary%20Ranges%20for%20Employees.png"><br/>
+   <img src="https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/The%20Most%20Common%20Salary%20Ranges%20for%20Employees.png" width="700"><br/>
 - Create a bar chart of average salary by title.<br/>
-   <img src="https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/Average%20Salary%20by%20Title.png"><br/>
+   <img src="https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/Average%20Salary%20by%20Title.png" width="700"><br/>
 
 ### Files
-- [ERD image](https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/ERD-EmployeeSQL.png)<br/>
-- [`.sql` file of schemata](https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/schemas.sql)<br/>
-- [`.sql` file of queries](https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/DataAnalysis_Queries.sql)<br/>
+- SQL Database
+  - [ERD image](https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/ERD-EmployeeSQL.png)<br/>
+  - [`.sql` file of schemata](https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/schemas.sql)<br/>
+  - [`.sql` file of queries](https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/DataAnalysis_Queries.sql)<br/>
 - Jupyter Notebook
   - [`.ipynb` file of script](https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/Employee.ipynb)<br/>
   - [Histogram for the most common salary ranges](https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/The%20Most%20Common%20Salary%20Ranges%20for%20Employees.png)<br/>
