@@ -13,9 +13,7 @@ Inspect the CSVs and sketch out an ERD of the tables.
 - Create a table schema for each of the six CSV files. Specify:
   - Data types
   - Primary keys
-  ```
-  Two composite keys were applied
-  ```
+    `Two composite keys were applied`
   - Foreign keys
   - Input order for handling the foreign keys
 - Import each CSV file into the corresponding SQL table. 
