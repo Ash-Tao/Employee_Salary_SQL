@@ -8,6 +8,7 @@ Performing the **data modeling**, **data engineering**, and **data analysis** on
 ### Data Modeling
 Inspect the CSVs and sketch out an ERD of the tables.<br/>
  <img src="https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/ERD_QuickDBD/ERD_QuickDBD-EmployeeSQL.png"><br/>
+> the relationship between `salaries` and `employees`, `employees` and `dept_manager` is one-to-one.<br/>
 
 ### Data Engineering
 - Create a table schema for each of the six CSV files. Specify:<br/>
@@ -47,11 +48,17 @@ Inspect the CSVs and sketch out an ERD of the tables.<br/>
    connection = engine.connect()
    ```
 - Create a histogram to visualize the most common salary ranges for employees.(3 plots for different gaps)<br/>
-   <img src="https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/Jupyter/The%20Most%20Common%20Salary%20Ranges%20for%20Employees(every%20%2410%2C000).png" width="700"><br/>
-   <img src="https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/Jupyter/The%20Most%20Common%20Salary%20Ranges%20for%20Employees(every%20%245%2C000).png" width="700"><br/>
-   <img src="https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/The%20Most%20Common%20Salary%20Ranges%20for%20Employees.png" width="700"><br/>
+   <img src="https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/Jupyter/The%20Most%20Common%20Salary%20Ranges%20for%20Employees(every%20%2410%2C000).png" width="400">
+   <img src="https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/Jupyter/The%20Most%20Common%20Salary%20Ranges%20for%20Employees(every%20%245%2C000).png" width="400">
+   <img src="https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/Jupyter/The%20Most%20Common%20Salary%20Ranges%20for%20Employees(every%20%241%2C000).png" width="400">
+   > conclusion:<br/>
+   > The frequency of salary is not normally distributed at all.<br/>
+   > Even if it is not a perfectly normal distribution, I still expect to see the highest frequency data group won't be on one side of the X axis but in a middle of the dataset. The most strong evidence we can find is from the table "The Frequence for Salary Range (every $1,000)" that 33% of salaries fall within the extreme narrow range (40000-41000/per year) on the left of the X asix, which is very strange in a real world.<br/>
 - Create a bar chart of average salary by title.<br/>
-   <img src="https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/Jupyter/The%20Most%20Common%20Salary%20Ranges%20for%20Employees(every%20%241%2C000).png" width="700"><br/>
+   <img src="https://github.com/Ash-Tao/sql-challenge/blob/main/EmployeeSQL/Jupyter/Average%20Salary%20by%20Title.png" width="700"><br/>
+  > conclusion:<br/>
+  > 2. The average salary does not match the employee's title.<br/>
+  > From the "Average Salary by Title" table, it can be seen that "Senior Staff" and "Staff" have the highest annual income. Both of them are 10% higher than other titles. "Senior Engineer" is the lowest one; the net difference between the highest and lowest is 10,000 yuan, which is impossible in a real world.<br/>
 
 ### Files
 - [SQL Database](https://github.com/Ash-Tao/sql-challenge/tree/main/EmployeeSQL/SQL_database)<br/>
