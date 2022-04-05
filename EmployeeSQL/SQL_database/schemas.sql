@@ -24,12 +24,6 @@ create table titles (
 	primary key (title_id)
 );
 
-create table salaries (
-	emp_no int not null,
-	salary int not null,
-	primary key (emp_no)
-);
-
 create table employees (
 	emp_no int not null,
 	emp_title_id varchar(5) not null,
@@ -38,6 +32,12 @@ create table employees (
 	last_name varchar(50) not null,
 	sex varchar(1) not null,
 	hire_date date not null,
+	primary key (emp_no)
+);
+
+create table salaries (
+	emp_no int not null,
+	salary int not null,
 	primary key (emp_no)
 );
 
@@ -54,22 +54,26 @@ create table dept_manager (
 );
 
 
-alter table employees add constraint fk_emp_title
+alter table employees add constraint fk_emp_title_employees
 foreign key (emp_title_id)
 references titles(title_id);
 
-alter table dept_manager add constraint fk_emp_no_manager
+alter table dept_manager add constraint fk_emp_no_dept_manager
 foreign key (emp_no)
 references employees(emp_no);
 
-alter table dept_emp add constraint fk_emp_no
+alter table dept_emp add constraint fk_emp_no_dept_emp
 foreign key (emp_no)
 references employees(emp_no);
 
-alter table dept_manager add constraint fk_dept_no_manager
+alter table dept_manager add constraint fk_dept_dept_manager
 foreign key (dept_no)
 references departments(dept_no);
 
-alter table dept_emp add constraint fk_dept_no
+alter table dept_emp add constraint fk_dept_no_dept_emp
 foreign key (dept_no)
 references departments(dept_no);
+
+alter table salaries add constraint fk_emp_no_salaries
+foreign key (emp_no)
+references employees(emp_no);
