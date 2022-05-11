@@ -1,4 +1,4 @@
-# sql-challenge
+# Employee_Salary_SQL
 
 ## Target
 Performing the **data modeling**, **data engineering**, and **data analysis** on the giving dataset from six CSV files.<br/>
